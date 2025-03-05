@@ -1,11 +1,32 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-ul {
+ul,
+ol {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 a {
   text-decoration: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
 }
 
 .visually-hidden {
@@ -31,7 +52,32 @@ a {
   color: #111;
 }
 
+.container {
+  width: 1166px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /* -------------------------HEADER */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  /* justify-content: space-between; */
+  margin-right: 90px;
+}
 
 .header-logo {
   font-weight: 700;
@@ -39,16 +85,30 @@ a {
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111;
+  display: flex;
+  align-items: center;
 }
 .header-logo-italic {
   font-style: italic;
 }
+
+.header-menu-list {
+  display: flex;
+  gap: 24px;
+  margin-left: auto;
+}
+
 .header-menu-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: #111;
+}
+
+.header-social-list {
+  display: flex;
+  gap: 14px;
 }
 
 .header-menu-link:hover,
@@ -61,24 +121,48 @@ a {
 /* --------------------HERO-------------- */
 
 .hero {
-  background-color: rgb(56, 62, 68);
+  padding-bottom: 80px;
 }
+
+.hero-container {
+  background-color: rgb(56, 62, 68);
+  border-radius: 30px;
+  padding: 380px 40px 40px;
+}
+
 .hero-title {
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-bottom: 32px;
+  max-width: 484px;
 }
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+}
+
 .hero-btn {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  background-color: #fd9222;
+  border-radius: 100px;
+  border: none;
+  padding: 14px 40px;
+  margin-right: 14px;
 }
 .hero-made-link {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  padding: 14px 40px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 100px;
 }
 .hero-scroll-link {
   font-weight: 500;
@@ -86,6 +170,7 @@ a {
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-left: auto;
 }
 /* -------------------------------------- */
 
@@ -93,15 +178,22 @@ a {
 
 .benefits {
   background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .benefits-list {
+  display: flex;
+  padding: 0 18px;
+  gap: 88px;
 }
 .benefits-item {
+  flex-basis: calc((100% - 2 * 88px) / 3);
 }
 .benefits-subtitle {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
+  margin-bottom: 18px;
 }
 .benefits-item-text {
   font-size: 14px;
@@ -118,6 +210,8 @@ a {
 /* --------------------TASTE------------------ */
 
 .taste {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .taste-title {
 }
@@ -148,6 +242,7 @@ a {
 /* --------------------MADE-------------- */
 
 .made {
+  padding-bottom: 120px;
 }
 .made-title {
 }
@@ -174,14 +269,28 @@ a {
 
 /* ------------------PRODUCTS-------------- */
 .products {
+  padding-bottom: 120px;
 }
 .products-title {
+  margin-bottom: 50px;
 }
 .products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 18px;
 }
 .products-item {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  background-color: #fff;
+  width: calc((100% - 54px) / 4);
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .products-image {
+  margin: 0 auto;
+  margin-bottom: 8px;
 }
 .products-subtitle {
   font-weight: 600;
@@ -190,23 +299,29 @@ a {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+  margin-bottom: 2px;
 }
 .products-item-description {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
+  margin-bottom: 18px;
 }
 .products-btn {
   font-weight: 600;
   font-size: 14px;
   color: #111;
+  padding: 8px 20px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
 }
 
 /* -------------------------------------- */
 
 /* --------------SELLERS------------------- */
 .sellers {
+  padding-bottom: 120px;
 }
 .sellers-title {
 }
@@ -230,6 +345,7 @@ a {
 /* -------------REVIEWS-------------------- */
 
 .reviews {
+  padding-bottom: 120px;
 }
 .reviews-title {
 }
