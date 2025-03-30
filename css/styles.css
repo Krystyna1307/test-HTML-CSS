@@ -126,6 +126,9 @@ img {
 
 .hero-container {
   background-color: rgb(56, 62, 68);
+  background-image: url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 30px;
   padding: 380px 40px 40px;
 }
@@ -274,6 +277,7 @@ img {
 .products-title {
   margin-bottom: 50px;
 }
+
 .products-list {
   display: flex;
   flex-wrap: wrap;
