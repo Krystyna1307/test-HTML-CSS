@@ -104,6 +104,7 @@ img {
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: #111;
+  transition: color 300ms linear;
 }
 
 .header-social-list {
@@ -115,6 +116,11 @@ img {
 .header-menu-link:active,
 .header-menu-link:focus {
   color: #fd9222;
+}
+
+.header-social-icon {
+  fill: transparent;
+  stroke: #111111;
 }
 
 /* -------------------------------------- */
@@ -328,12 +334,18 @@ img {
   padding-bottom: 120px;
 }
 .sellers-title {
+  margin-bottom: 50px;
 }
 .sellers-list {
+  display: flex;
+  gap: 16px;
 }
 .sellers-item {
+  width: calc((100% - 32px) / 3);
 }
 .sellers-image {
+  width: 100%;
+  height: auto;
 }
 .sellers-subtitle {
   font-weight: 600;
@@ -342,9 +354,25 @@ img {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+  padding: 28px 0;
+  text-align: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-top: none;
+  border-radius: 0 0 15px 15px;
 }
 
 /* -------------------------------------- */
+
+/* .sellers-item {
+  overflow: hidden;
+  border-radius: 15px; /* Для округлення */
+/* }
+
+.sellers-image {
+  width: 100%;
+  height: auto;
+  display: block;
+} */
 
 /* -------------REVIEWS-------------------- */
 
