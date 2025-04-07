@@ -518,9 +518,6 @@ img {
   background-color: rgba(133, 126, 126, 0.7);
   position: fixed;
   top: 0;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 .modal {
@@ -532,4 +529,17 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+.close-modal-svg {
+  fill: transparent;
+  stroke: #111111;
 }
