@@ -510,7 +510,7 @@ img {
   letter-spacing: -0.02em;
   color: #fff;
 }
-/* -------------------------------------- */
+/* ------------------MODAL-------------------- */
 
 .backdrop {
   width: 100%;
@@ -529,6 +529,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
 }
 
 .modal-close {
@@ -543,3 +544,10 @@ img {
   fill: transparent;
   stroke: #111111;
 }
+
+.modal-title {
+  text-align: left;
+  max-width: 298px;
+}
+
+/* ------------------</MODAL>-------------------- */
