@@ -552,9 +552,49 @@
         </p>
 
         <form class="modal-form">
-          <input type="text" class="modal-input" />
-          <input type="text" class="modal-input" />
-          <input type="text" class="modal-input" />
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Name</label>
+            <div class="modal-field-wrap">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                placeholder="Enter name*"
+                required
+                id="user-name"
+              />
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">Name</label>
+            <input
+              type="email"
+              name="user-email"
+              class="modal-input"
+              placeholder="Enter email"
+              id="user-email"
+            />
+          </div>
+          <label for="user-tel" class="modal-label">Name</label>
+          <input
+            type="tel"
+            name="user-tel"
+            class="modal-input"
+            placeholder="Enter tel*"
+            required
+            id="user-tel"
+          />
+
+          <textarea
+            name="user-comment"
+            id="user-comment"
+            class="modal-text"
+            placeholder="Enter text"
+          ></textarea>
+          <button type="submit" class="modal-btn">Send</button>
         </form>
       </div>
     </div>
