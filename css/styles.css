@@ -461,6 +461,8 @@ img {
 /* -------------------FOOTER---------------- */
 .footer {
   background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .footer-title {
   font-weight: 500;
@@ -468,15 +470,31 @@ img {
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: #fff;
+  max-width: 300px;
+  margin-right: auto;
 }
+
+.footer-top {
+  display: flex;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 24px;
+}
+
+.footer-soc {
+  margin-right: 50px;
+}
+
 .footer-subtitle {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-  text-align: center;
   color: #fff;
+  margin-bottom: 14px;
 }
 .footer-social-list {
+  display: flex;
+  gap: 14px;
 }
 .footer-social-item {
 }
@@ -518,6 +536,15 @@ img {
   background-color: rgba(133, 126, 126, 0.7);
   position: fixed;
   top: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal {
@@ -610,6 +637,66 @@ img {
   padding-left: 62px;
   padding: 22px 24px;
   resize: none;
+}
+
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-check-text {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.modal-check-text::before {
+  content: "";
+  width: 40px;
+  height: 22px;
+  border-radius: 50px;
+  border: 1px solid #b5ada4;
+  margin-right: 10px;
+}
+
+.modal-check-text::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #fd9222;
+  transition-duration: 300ms;
+}
+
+.modal-check:checked + .modal-check-text::after {
+  transform: translate(18px);
+}
+
+/* .modal-check-text span {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(8, 7, 7, 0.1);
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.modal-check:checked + .modal-check-text span {
+  background-color: #fd9222;
+  border: none;
+  fill: #fafafa;
+} */
+
+.check-icon {
 }
 
 /* ------------------</MODAL>-------------------- */
