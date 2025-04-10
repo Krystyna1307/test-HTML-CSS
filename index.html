@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a href="" class="header-logo"
@@ -80,7 +80,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="hero">
         <div class="container">
@@ -158,59 +158,48 @@
           <ul class="taste-list">
             <li class="taste-item">
               <img
-                src="./images/taste-img-1.png"
+                src="./images/taste-img-1-mob-min.jpg"
                 alt="MILK CHOCOLATE"
-                width="214"
-                height="160"
                 class="taste-image"
               />
               <h3 class="taste-subtitle">MILK CHOCOLATE</h3>
             </li>
             <li class="taste-item">
               <img
-                src="./images/taste-img-2.png"
+                src="./images/taste-img-2-mob-min.jpg"
                 alt="MILK"
-                width="214"
-                height="160"
+                class="taste-image"
               />
               <h3 class="taste-subtitle">MILK</h3>
             </li>
             <li class="taste-item">
               <img
-                src="./images/taste-img-3.png"
+                src="./images/taste-img-3-mob-min.jpg"
                 alt="NUTS"
-                width="214"
-                height="160"
                 class="taste-image"
               />
               <h3 class="taste-subtitle">NUTS</h3>
             </li>
             <li class="taste-item">
               <img
-                src="./images/taste-img-4.png"
+                src="./images/taste-img-4-mob-min.jpg"
                 alt="SEMI - SWEET CHOCOLATE"
-                width="214"
-                height="160"
                 class="taste-image"
               />
               <h3 class="taste-subtitle">SEMI - SWEET CHOCOLATE</h3>
             </li>
             <li class="taste-item">
               <img
-                src="./images/taste-img-5.png"
+                src="./images/taste-img-5-min.jpg"
                 alt="CACAO"
-                width="214"
-                height="160"
                 class="taste-image"
               />
               <h3 class="taste-subtitle">CACAO</h3>
             </li>
             <li class="taste-item">
               <img
-                src="./images/taste-img-6.png"
+                src="./images/taste-img-6-min.jpg"
                 alt="RASPBERRY"
-                width="214"
-                height="160"
                 class="taste-image"
               />
               <h3 class="taste-subtitle">RASPBERRY</h3>
@@ -219,8 +208,7 @@
               <img
                 src="./images/taste-img-7.png"
                 alt="COCONUT OIL"
-                width="214"
-                height="160"
+                class="taste-image"
               />
               <h3 class="taste-subtitle">COCONUT OIL</h3>
             </li>
@@ -234,13 +222,39 @@
             HOW IT’S <span class="title-colored">made</span>?
           </h2>
           <div class="made-wrap">
-            <img
-              src="./images/made-img.jpg"
-              alt="liquid chocolate"
-              width="600"
-              height="400"
-              class="made-image"
-            />
+            <picture>
+              <source
+                srcset="./images/made-img.jpg 1x, ./images/made-img-2x.jpg 2x"
+                media="(min-width: 1200px)"
+                width="600"
+                height="400"
+              />
+              <source
+                srcset="
+                  ./images/made-img-tab.jpg    1x,
+                  ./images/made-img-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+                width="614"
+                height="400"
+              />
+              <source
+                srcset="
+                  ./images/made-img-mob.jpg    1x,
+                  ./images/made-img-mob-2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+                width="335"
+                height="500"
+              />
+              <img
+                src="./images/made-img.jpg"
+                alt="liquid chocolate"
+                width="600"
+                height="400"
+                class="made-image"
+              />
+            </picture>
 
             <div class="made-content">
               <h3 class="made-subtitle">
@@ -293,6 +307,10 @@
           <ul class="products-list">
             <li class="products-item">
               <img
+                srcset="
+                  ./images/products-img-1.jpg    1x,
+                  ./images/products-img-1-2x.jpg 2x
+                "
                 src="./images/products-img-1.jpg"
                 width="230"
                 height="201"
@@ -305,6 +323,10 @@
             </li>
             <li class="products-item">
               <img
+                srcset="
+                  ./images/products-img-2.jpg    1x,
+                  ./images/products-img-2-2x.jpg 2x
+                "
                 src="./images/products-img-2.jpg"
                 width="230"
                 height="201"
@@ -317,6 +339,10 @@
             </li>
             <li class="products-item">
               <img
+                srcset="
+                  ./images/products-img-3.jpg    1x,
+                  ./images/products-img-3-2x.jpg 2x
+                "
                 src="./images/products-img-3.jpg"
                 width="230"
                 height="201"
@@ -329,6 +355,10 @@
             </li>
             <li class="products-item">
               <img
+                srcset="
+                  ./images/products-img-4.jpg    1x,
+                  ./images/products-img-4-2x.jpg 2x
+                "
                 src="./images/products-img-4.jpg"
                 width="230"
                 height="201"
@@ -341,6 +371,10 @@
             </li>
             <li class="products-item">
               <img
+                srcset="
+                  ./images/products-img-5.jpg    1x,
+                  ./images/products-img-5-2x.jpg 2x
+                "
                 src="./images/products-img-5.jpg"
                 width="230"
                 height="201"
@@ -352,6 +386,10 @@
             </li>
             <li class="products-item">
               <img
+                srcset="
+                  ./images/products-img-6.jpg    1x,
+                  ./images/products-img-6-2x.jpg 2x
+                "
                 src="./images/products-img-6.jpg"
                 width="230"
                 height="201"
@@ -363,6 +401,10 @@
             </li>
             <li class="products-item">
               <img
+                srcset="
+                  ./images/products-img-7.jpg    1x,
+                  ./images/products-img-7-2x.jpg 2x
+                "
                 src="./images/products-img-7.jpg"
                 width="230"
                 height="201"
@@ -375,6 +417,10 @@
             </li>
             <li class="products-item">
               <img
+                srcset="
+                  ./images/products-img-8.jpg    1x,
+                  ./images/products-img-8-2x.jpg 2x
+                "
                 src="./images/products-img-8.jpg"
                 width="230"
                 height="201"
@@ -397,11 +443,48 @@
           <ul class="sellers-list">
             <li class="sellers-item">
               <div class="sellers-cover-wrap">
+                <!-- <picture>
+                  <source
+                    srcset="
+                      ./images/sellers-img-1.jpg    1x,
+                      ./images/sellers-img-1-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                    width="368"
+                    height="464"
+                  />
+                  <source
+                    srcset="
+                      ./images/sellers-img-2-tab.jpg    1x,
+                      ./images/sellers-img-2-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                    width="344"
+                    height="464"
+                  />
+                  <source
+                    srcset="
+                      ./images/sellers-img-3-mob.jpg    1x,
+                      ./images/sellers-img-3-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                    width="335"
+                    height="464"
+                  />
+                  <img
+                    src="./images/sellers-img-1.jpg"
+                    alt="CHOCOLATE WITH NUTS"
+                    width="464"
+                    height="368"
+                    class="sellers-image"
+                  />
+                </picture> -->
+
                 <img
                   src="./images/sellers-img-1.jpg"
                   alt="CHOCOLATE WITH NUTS"
-                  width="464"
-                  height="368"
+                  width="368"
+                  height="464"
                   class="sellers-image"
                 />
                 <p class="sellers-cover-text">
