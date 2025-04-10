@@ -44,8 +44,10 @@ img {
 
 .title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  /* font-size: 24px;
+  line-height: 1.17; */
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
@@ -198,7 +200,6 @@ img {
   margin-left: auto;
 }
 /* -------------------------------------- */
-
 /* ------------------BENEFITS------------- */
 
 .benefits {
@@ -250,7 +251,6 @@ img {
 }
 
 /* -----------------/BENEFITS--------------------- */
-
 /* --------------------TASTE------------------ */
 
 .taste {
@@ -308,7 +308,6 @@ img {
 }
 
 /* -------------------------------------- */
-
 /* --------------------MADE-------------- */
 
 .made {
@@ -317,45 +316,106 @@ img {
 .made-title {
   margin-bottom: 50px;
 }
+
+.made-wrap {
+  display: flex;
+  gap: 20px;
+}
+
 .made-image {
 }
+
+.made-content {
+  padding: 32px;
+}
+
 .made-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   color: #111;
+  margin-bottom: 28px;
 }
 .made-list {
 }
 .made-item {
+  margin-bottom: 24px;
 }
+
+.made-item:last-child {
+  margin-bottom: 0;
+}
+
 .made-item-text {
+  /* font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
+  margin: 0;
+  display: flex;
+  align-items: center; */
+
+  position: relative;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111;
+  padding-left: 20px;
+  margin: 0;
 }
+
+.made-item-text::before {
+  /* content: " ";
+  display: inline-block;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #111111;
+  margin-right: 8px;
+  flex-shrink: 0; */
+
+  content: "";
+  position: absolute;
+  top: 0.35em;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #111;
+  border-radius: 50%;
+}
+
 /* -------------------------------------- */
 
 /* ------------------PRODUCTS-------------- */
 .products {
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .products-title {
-  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  color: #111;
+  /* margin-bottom: 50px; */
+  margin-bottom: 22px;
 }
 
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 18px;
+  /* gap: 24px 18px; */
+  gap: 22px;
 }
 .products-item {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   background-color: #fff;
-  width: calc((100% - 54px) / 4);
+  /* width: calc((100% - 54px) / 4); */
+  width: 100%;
   text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -817,6 +877,12 @@ img {
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  .title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
   .benefits {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -829,6 +895,21 @@ img {
   .benefits-item {
     padding-right: 0;
     width: calc((100% - 88px) / 2);
+  }
+  .products {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .products-title {
+    margin-bottom: 50px;
+  }
+
+  .products-list {
+    gap: 32px;
+  }
+
+  .products-item {
+    width: calc((100% - 32px) / 2);
   }
 }
 
@@ -844,5 +925,18 @@ img {
   }
   .benefits-item {
     flex-basis: calc((100% - 2 * 88px) / 3);
+  }
+
+  .products {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .products-list {
+    gap: 24px 18px;
+  }
+
+  .products-item {
+    width: calc((100% - 54px) / 4);
   }
 }
