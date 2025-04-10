@@ -1,5 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
+
+<symbol id="icon-chocolate" viewBox="0 0 27 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.7429" d="M20.111 23.118l-14.186-8.864M9.837 7.837l14.185 8.864M9.106 25.102l11.736-19.25M25.653 14.027c-3.040-1.899-4.234-3.384-2.278-6.592l-9.626-6.015-11.736 19.25 14.185 8.864 9.454-15.507z"></path>
+</symbol>
+
     <symbol id="icon-facebook" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M24 2.667h-4a6.67 6.67 0 0 0-6.667 6.667v4h-4v5.333h4v10.667h5.333V18.667h4l1.333-5.333h-5.333v-4A1.334 1.334 0 0 1 20 8h4V2.667z"/>
     </symbol>

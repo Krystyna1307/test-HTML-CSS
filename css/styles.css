@@ -104,8 +104,13 @@ img {
   font-style: italic;
 }
 
+.header-icon {
+  fill: transparent;
+  stroke: var(--orange);
+}
+
 .header-menu-list {
-  display: flex;
+  display: none;
   gap: 24px;
   margin-left: auto;
 }
@@ -137,7 +142,7 @@ img {
 }
 
 .header-social-list {
-  display: flex;
+  display: none;
   gap: 14px;
 }
 
@@ -1041,5 +1046,9 @@ img {
 
   .products-item {
     width: calc((100% - 54px) / 4);
+  }
+
+  .made-wrap picture {
+    flex-shrink: 0;
   }
 }
