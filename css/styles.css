@@ -74,8 +74,11 @@ img {
 /* -----------------------HEADER-------------- */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 32px;
+  /* padding-top: 24px;
+  padding-bottom: 32px; */
+
+  padding-top: 20px;
+  padding-bottom: 14px;
 }
 
 .header-container {
@@ -87,13 +90,15 @@ img {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  margin-right: 90px;
+  /* margin-right: 90px; */
 }
 
 .header-logo {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.11;
+  /* font-size: 18px;
+  line-height: 1.11; */
+  font-size: 14px;
+  line-height: 1.29;
   letter-spacing: -0.03em;
   color: #111;
   display: flex;
@@ -156,8 +161,26 @@ img {
   fill: transparent;
   stroke: var(--orange);
 }
+
 /* -------------------------------------- */
 /*-------------MOB MENU---------------- */
+
+.mob-menu-open {
+  display: flex;
+}
+
+.menu-open-btn {
+  fill: transparent;
+  stroke: var(--black);
+}
+
+.menu-open-icon {
+  transition: transform 250ms ease;
+}
+
+.menu-open-icon:hover {
+  transform: scale(1.2);
+}
 
 .mob-menu {
   position: fixed;
@@ -173,14 +196,21 @@ img {
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
+  z-index: 1000;
 }
+
 .menu-close-btn {
-  display: block;
-  margin-left: auto;
-  margin-bottom: 88px;
+  display: inline-block;
+  float: right;
+}
+
+.menu-close-icon {
+  fill: transparent;
+  stroke: var(--white-2);
 }
 
 .mob-nav {
+  margin-top: 88px;
   display: flex;
   justify-content: center;
 }
@@ -197,21 +227,32 @@ img {
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: var(--white-2);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.current {
+
+.mob-menu-link:hover,
+.mob-menu-link:focus {
+  color: var(--orange);
 }
+
 .mob-social-list {
-  /* margin-top: auto; */
   display: flex;
   gap: 14px;
 }
-.mob-social-item {
-}
-.mob-social-link {
-}
+
 .mob-social-icon {
   fill: transparent;
   stroke: var(--white-2);
+  transition-property: stroke;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-social-icon:hover {
+  stroke: var(--orange);
 }
 
 /* -------------------------------------- */
@@ -264,6 +305,11 @@ img {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.wrap-btn {
 }
 
 .hero-btn {
@@ -277,6 +323,12 @@ img {
   padding: 12px 16px;
   margin-right: 14px;
 }
+
+.hero-btn:hover {
+  color: var(--orange);
+  background-color: var(--beige);
+}
+
 .hero-made-link {
   font-weight: 600;
   font-size: 14px;
@@ -287,15 +339,61 @@ img {
   background-color: transparent;
   border-radius: 100px;
 }
+
+.hero-made-link:hover {
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+.scroll-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
 .hero-scroll-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
-  color: #fff;
+  color: var(--white-2);
   /* margin-left: auto; */
-  margin-top: 32px;
+  /* margin-top: 32px; */
 }
+
+.hero-scroll-link:hover {
+  color: var(--orange);
+}
+
+.scroll-down-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: var(--white-2);
+  border-radius: 100%;
+  transition: background-color 250ms ease;
+}
+
+.scroll-down-btn .icon-scroll {
+  fill: var(--orange);
+  stroke: var(--orange);
+  transition: fill 250ms ease, stroke 250ms ease;
+  position: absolute;
+}
+
+.scroll-down-btn:hover {
+  background-color: var(--orange);
+}
+
+.scroll-down-btn:hover .icon-scroll {
+  fill: var(--white-2);
+  stroke: var(--white-2);
+}
+
 /* -------------------------------------- */
 /* ------------------BENEFITS------------- */
 

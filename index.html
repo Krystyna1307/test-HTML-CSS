@@ -79,16 +79,29 @@
           </li>
         </ul>
 
-        <button type="button" class="menu-open-btn">O</button>
+        <!-- <button type="button" class="menu-open-btn">O</button> -->
+
+        <div class="mob-menu-open">
+          <a href="" class="menu-open-btn">
+            <svg class="menu-open-icon" width="24" height="16">
+              <use href="./images/symbol-defs.svg#icon-mob-open"></use>
+            </svg>
+          </a>
+        </div>
       </div>
 
-      <div class="mob-menu is-open">
-        <div>
-          <button type="button" class="menu-close-btn">X</button>
+      <div class="mob-menu">
+        <div сlass="mob-menu-wrap-btn">
+          <!-- <button type="button" class="menu-close-btn">X</button> -->
+          <a href="" class="menu-close-btn">
+            <svg class="menu-close-icon" width="14" height="14">
+              <use href="./images/symbol-defs.svg#icon-mob-close"></use>
+            </svg>
+          </a>
           <nav class="mob-nav">
             <ul class="mob-menu-list">
               <li class="mob-menu-item">
-                <a class="mob-menu-link current" href="">Home</a>
+                <a class="mob-menu-link" href="">Home</a>
               </li>
               <li class="mob-menu-item">
                 <a class="mob-menu-link" href="">How it’s made?</a>
@@ -148,9 +161,18 @@
               moment of pure delight!
             </h1>
             <div class="hero-buttons">
-              <button type="button" class="hero-btn">Buy now</button>
-              <a href="" class="hero-made-link">How it’s made</a>
-              <a href="" class="hero-scroll-link">scroll down</a>
+              <div class="wrap-btn">
+                <button type="button" class="hero-btn">Buy now</button>
+                <a href="" class="hero-made-link">How it’s made</a>
+              </div>
+              <div class="scroll-wrap">
+                <a href="" class="hero-scroll-link">scroll down</a>
+                <a href="" class="scroll-down-btn">
+                  <svg class="icon-scroll" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#icon-scroll"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
