@@ -461,14 +461,6 @@ img {
   margin-bottom: 27px;
 }
 
-/* .taste-text {
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: var(--black);
-} */
-
 .taste-list {
   display: flex;
   flex-wrap: wrap;
@@ -541,6 +533,47 @@ img {
 
 .taste-item:nth-child(even) .taste-icon-btn-mob {
   stroke: var(--orange);
+}
+
+.taste-cover-wrap {
+  position: absolute;
+  top: 0;
+  background-color: var(--white);
+  height: 100%;
+  padding: 28px;
+}
+
+.taste-cover-title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.taste-cover-btn {
+  border-radius: 35px;
+  padding: 6px 16px;
+  width: 81px;
+  height: 24px;
+  background: var(--orange);
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: var(--white-2);
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.taste-cover-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--black);
 }
 
 /* -------------------------------------- */
