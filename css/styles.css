@@ -470,7 +470,6 @@ img {
   border-radius: 15px;
   width: 335px;
   height: 270px;
-  /* border: 1px solid var(--orange); */
   position: relative;
   overflow: hidden;
 }
@@ -486,6 +485,10 @@ img {
 
 .taste-item:nth-child(4n + 3) {
   background-color: var(--violet);
+  /* border: none; */
+}
+
+.taste-item:nth-child(2n + 2):hover {
   border: none;
 }
 
@@ -544,8 +547,8 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  border-radius: 15px;
-  background-color: var(--white);
+  /* border-radius: 15px; */
+  background-color: var(--white-2);
   height: 100%;
   width: 100%;
   padding: 28px;
@@ -595,9 +598,9 @@ img {
   letter-spacing: -0.02em;
   color: var(--black);
 
-  overflow: visible;
+  max-height: 146px;
+  overflow-y: auto;
   white-space: normal;
-  text-overflow: unset;
   display: block;
 }
 
