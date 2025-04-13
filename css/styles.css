@@ -10,6 +10,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: var(--white);
 }
 ul,
 ol {
@@ -487,9 +488,9 @@ img {
   background-color: var(--violet);
 }
 
-.taste-item:nth-child(2n + 2):hover {
+/* .taste-item:nth-child(2n + 2):hover {
   border: none;
-}
+} */
 
 .taste-img-wrapper {
   background-color: inherit;
@@ -735,31 +736,55 @@ img {
 /* --------------SELLERS------------------- */
 
 .sellers {
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 }
 
 .sellers-title {
-  margin-bottom: 50px;
-}
-
-.sellers-list {
-  display: flex;
-  gap: 16px;
+  margin-bottom: 32px;
 }
 
 .sellers-item {
-  width: calc((100% - 32px) / 3);
   position: relative;
+  margin-bottom: 16px;
 }
 
 .sellers-item:hover .sellers-cover-text {
   transform: translateY(0);
 }
 
+/* Стандартне зображення для десктопів */
 .sellers-image {
   width: 100%;
-  height: auto;
+  height: 464px;
   object-fit: cover;
+  object-position: center;
+  border-radius: 15px 15px 0 0;
+}
+
+/* 📱 Мобільні пристрої до 320px */
+@media (max-width: 320px) {
+  .sellers-image {
+    width: 320px;
+    height: 464px;
+  }
+
+  .sellers-item {
+    width: 320px;
+    margin: 0 auto 16px;
+  }
+}
+
+/* 📱📲 Планшети до 768px */
+@media (min-width: 321px) and (max-width: 768px) {
+  .sellers-image {
+    width: 335px;
+    height: 464px;
+  }
+
+  .sellers-item {
+    width: 335px;
+    margin: 0 auto 16px;
+  }
 }
 
 .sellers-subtitle {
@@ -806,18 +831,20 @@ img {
 /* -------------REVIEWS-------------------- */
 
 .reviews {
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 }
 .reviews-title {
-  margin-bottom: 90px;
+  margin-bottom: 74px;
 }
 .reviews-list {
-  display: flex;
-  gap: 28px;
-  margin-bottom: 50px;
+  /* display: flex; */
+  /* gap: 28px; */
+  /* gap: 16px; */
+  /* margin-bottom: 50px; */
+  /* margin-bottom: 32px; */
 }
 .reviews-item {
-  width: calc((100% - 56px) / 3);
+  /* width: calc((100% - 56px) / 3); */
   padding: 56px 24px 24px 24px;
   background-color: var(--white-2);
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -825,11 +852,21 @@ img {
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
   position: relative;
 }
+
+.reviews-item:not(:last-child) {
+  margin-bottom: 74px;
+}
+
+.reviews-item:last-child {
+  margin-bottom: 32px;
+}
+
 .reviews-image {
   position: absolute;
   top: -42px;
   left: 50%;
   transform: translateX(-50%);
+  min-width: 80px;
 }
 .reviews-subtitle {
   font-weight: 600;
@@ -837,6 +874,7 @@ img {
   line-height: 1.33;
   text-align: center;
   margin-bottom: 24px;
+  background-color: var(--white-2);
 }
 .reviews-item-text {
   font-size: 14px;
@@ -1284,7 +1322,47 @@ img {
   .products-item {
     width: calc((100% - 32px) / 2);
   }
+
+  .sellers {
+    padding-bottom: 100px;
+  }
+
+  .sellers-title {
+    margin-bottom: 50px;
+  }
+
+  .sellers-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .sellers-item {
+    width: calc((100% - 16px) / 2);
+    margin-bottom: 0px;
+  }
+
+  .reviews {
+    padding-bottom: 100px;
+  }
+
+  .reviews-title {
+    margin-bottom: 91px;
+  }
+
+  .reviews-list {
+    display: flex;
+    gap: 16px;
+    /* margin-bottom: 50px; */
+    /* margin-bottom: 32px; */
+  }
+
+  .reviews-item {
+    width: calc((100% - 16px) / 2);
+  }
 }
+
+/* -----------------1200px---------------- */
 
 @media screen and (min-width: 1200px) {
   .container {
@@ -1367,5 +1445,17 @@ img {
 
   .made-wrap picture {
     flex-shrink: 0;
+  }
+
+  .sellers {
+    padding-bottom: 120px;
+  }
+
+  .sellers-item {
+    width: calc((100% - 32px) / 3);
+  }
+
+  .reviews {
+    padding-bottom: 120px;
   }
 }
