@@ -885,19 +885,13 @@ img {
 
 .footer {
   background-color: var(--violet);
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
   padding: 32px 20px 32px 20px;
 }
 
 .footer-title {
   font-weight: 500;
-  /* font-size: 28px;
-  line-height: 1.21; */
-
   font-size: 24px;
   line-height: 1.17;
-
   letter-spacing: -0.02em;
   color: var(--white-2);
   max-width: 300px;
@@ -908,7 +902,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  /* padding-bottom: 50px; */
   padding-bottom: 32px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 24px;
@@ -932,11 +925,6 @@ img {
   gap: 14px;
 }
 
-.footer-social-item {
-}
-.footer-social-link {
-}
-
 .footer-soc-icon {
   fill: transparent;
   stroke: var(--white-2);
@@ -950,11 +938,6 @@ img {
   font-style: normal;
 }
 
-.footer-address-list {
-}
-.footer-address-item {
-}
-
 .footer-address-link {
   font-weight: 400;
   font-size: 14px;
@@ -964,17 +947,7 @@ img {
   color: var(--white-2);
 }
 
-.footer-bottom {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
-}
-
-.footer-navigation {
-}
 .footer-menu-list {
-  /* display: flex; */
-  /* gap: 24px; */
   margin-bottom: 32px;
 }
 
@@ -997,29 +970,23 @@ img {
 .footer-input {
   border: 1.5px solid rgba(255, 255, 255, 0.15);
   border-radius: 30px;
-  /* width: 313px; */
   width: 207px;
   height: 45px;
-  /* padding: 0 24px; */
   padding: 0 18px;
   background-color: transparent;
 }
 
 .footer-input::placeholder {
-  /* font-size: 18px; */
   font-weight: 400;
   font-size: 14px;
   letter-spacing: -0.02em;
-
   color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-form-btn {
   font-weight: 600;
-
   font-size: 14px;
   color: var(--white-2);
-
   border-radius: 100px;
   /* padding: 17px 40px; */
   padding: 14px 24px;
@@ -1498,5 +1465,39 @@ img {
 
   .reviews {
     padding-bottom: 120px;
+  }
+
+  .footer {
+    padding: 50px 32px 50px 32px;
+  }
+
+  .footer-title {
+    font-size: 28px;
+    line-height: 1.21;
+  }
+
+  .footer-input {
+    width: 313px;
+    height: 52px;
+    padding: 0 24px;
+  }
+
+  .footer-top {
+    padding-bottom: 50px;
+  }
+
+  .footer-menu-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .footer-input::placeholder {
+    font-size: 18px;
+  }
+
+  .footer-form-btn {
+    padding: 17px 32px;
+    width: 137px;
+    height: 52px;
+    margin-left: 8px;
   }
 }
