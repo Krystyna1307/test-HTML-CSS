@@ -606,12 +606,9 @@ img {
 /* -------------------------------------- */
 /* --------------------MADE-------------- */
 .made {
-  /* padding-top: 120px; */
-  /* padding-bottom: 120px; */
   padding-bottom: 80px;
 }
 .made-title {
-  /* margin-bottom: 50px; */
   margin-bottom: 32px;
 }
 
@@ -626,7 +623,6 @@ img {
 }
 
 .made-content {
-  /* padding: 32px; */
   padding: 20px 14px;
   background-color: var(--white-2);
   border-radius: 15px;
@@ -637,13 +633,10 @@ img {
   font-size: 18px;
   line-height: 1.33;
   color: var(--black);
-  /* margin-bottom: 28px; */
   margin-bottom: 20px;
 }
-.made-list {
-}
+
 .made-item {
-  /* margin-bottom: 24px; */
   margin-bottom: 18px;
 }
 
@@ -676,7 +669,6 @@ img {
 /* ------------------PRODUCTS-------------- */
 
 .products {
-  /* padding-top: 80px; */
   padding-bottom: 80px;
 }
 
@@ -684,14 +676,12 @@ img {
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: -0.02em;
-  /* margin-bottom: 50px; */
   margin-bottom: 22px;
 }
 
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px 18px; */
   gap: 22px;
 }
 
@@ -699,7 +689,6 @@ img {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   background-color: var(--white-2);
-  /* width: calc((100% - 54px) / 4); */
   width: 100%;
   text-align: center;
   padding-top: 32px;
@@ -752,7 +741,6 @@ img {
   transform: translateY(0);
 }
 
-/* Стандартне зображення для десктопів */
 .sellers-image {
   width: 100%;
   height: 464px;
@@ -761,7 +749,7 @@ img {
   border-radius: 15px 15px 0 0;
 }
 
-/* 📱 Мобільні пристрої до 320px */
+/* Мобільні пристрої до 320px */
 @media (max-width: 320px) {
   .sellers-image {
     width: 320px;
@@ -774,7 +762,7 @@ img {
   }
 }
 
-/* 📱📲 Планшети до 768px */
+/* Планшети до 768px */
 @media (min-width: 321px) and (max-width: 768px) {
   .sellers-image {
     width: 335px;
@@ -833,19 +821,12 @@ img {
 .reviews {
   padding-bottom: 80px;
 }
+
 .reviews-title {
   margin-bottom: 74px;
 }
-.reviews-list {
-  /* display: flex; */
-  /* gap: 28px; */
-  /* gap: 16px; */
-  /* margin-bottom: 50px; */
-  /* margin-bottom: 32px; */
-}
+
 .reviews-item {
-  /* width: calc((100% - 56px) / 3); */
-  /* padding: 56px 24px 24px 24px; */
   padding: 56px 18px 18px 18px;
   background-color: var(--white-2);
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -904,14 +885,19 @@ img {
 
 .footer {
   background-color: var(--violet);
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding: 32px 20px 32px 20px;
 }
 
 .footer-title {
   font-weight: 500;
-  font-size: 28px;
-  line-height: 1.21;
+  /* font-size: 28px;
+  line-height: 1.21; */
+
+  font-size: 24px;
+  line-height: 1.17;
+
   letter-spacing: -0.02em;
   color: var(--white-2);
   max-width: 300px;
@@ -920,13 +906,17 @@ img {
 
 .footer-top {
   display: flex;
-  padding-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 32px;
+  /* padding-bottom: 50px; */
+  padding-bottom: 32px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 24px;
 }
 
 .footer-soc {
   margin-right: 50px;
+  order: 2;
 }
 
 .footer-subtitle {
@@ -945,6 +935,15 @@ img {
 .footer-social-item {
 }
 .footer-social-link {
+}
+
+.footer-soc-icon {
+  fill: transparent;
+  stroke: var(--white-2);
+}
+
+.footer-contacts {
+  order: 1;
 }
 
 .footer-address {
@@ -966,19 +965,23 @@ img {
 }
 
 .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 
 .footer-navigation {
 }
 .footer-menu-list {
-  display: flex;
-  gap: 24px;
+  /* display: flex; */
+  /* gap: 24px; */
+  margin-bottom: 32px;
 }
-.footer-menu-item {
+
+.footer-menu-item:not(:last-child) {
+  margin-bottom: 18px;
 }
+
 .footer-menu-link {
   font-weight: 500;
   font-size: 14px;
@@ -994,27 +997,36 @@ img {
 .footer-input {
   border: 1.5px solid rgba(255, 255, 255, 0.15);
   border-radius: 30px;
-  width: 313px;
-  height: 52px;
-  padding: 0 24px;
+  /* width: 313px; */
+  width: 207px;
+  height: 45px;
+  /* padding: 0 24px; */
+  padding: 0 18px;
   background-color: transparent;
 }
 
 .footer-input::placeholder {
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-weight: 400;
+  font-size: 14px;
   letter-spacing: -0.02em;
+
   color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-form-btn {
   font-weight: 600;
+
   font-size: 14px;
   color: var(--white-2);
 
   border-radius: 100px;
-  padding: 17px 40px;
-  width: 137px;
-  height: 52px;
+  /* padding: 17px 40px; */
+  padding: 14px 24px;
+  /* width: 137px; */
+  /* height: 52px; */
+  width: 120px;
+  height: 45px;
   background-color: var(--orange);
   border: none;
   margin-left: 8px;
