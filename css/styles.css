@@ -771,7 +771,7 @@ img {
 
   .sellers-item {
     width: 335px;
-    margin: 0 auto 16px;
+    margin: 0 0 16px;
   }
 }
 
@@ -1275,7 +1275,8 @@ img {
 
   .taste-list {
     margin-top: 50px;
-    gap: 32px;
+    gap: 32px 0;
+    justify-content: flex-start;
   }
 
   .made {
@@ -1421,6 +1422,14 @@ img {
   .taste {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .taste-list {
+    gap: 24px 32px;
+  }
+
+  .taste-item {
+    width: 260px;
   }
 
   .made {
