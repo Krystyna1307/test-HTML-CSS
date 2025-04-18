@@ -34,6 +34,8 @@ h6 {
 }
 button {
   cursor: pointer;
+  background: transparent;
+  border: none;
 }
 
 img {
@@ -168,18 +170,15 @@ img {
 }
 
 /* -------------------------------------- */
-/*-------------MOB MENU---------------- */
+/*-------------MOBILE-MENU--------------- */
 
 .mob-menu-open {
   display: flex;
 }
 
-.menu-open-btn {
+.menu-open-icon {
   fill: transparent;
   stroke: var(--black);
-}
-
-.menu-open-icon {
   transition: transform 250ms ease;
 }
 
@@ -261,7 +260,7 @@ img {
 }
 
 /* -------------------------------------- */
-/* --------------------HERO-------------- */
+/* -------------------- HERO -------------- */
 
 .hero {
   padding-bottom: 80px;
@@ -394,7 +393,7 @@ img {
 }
 
 /* -------------------------------------- */
-/* ------------------BENEFITS------------- */
+/* ------------------ BENEFITS ------------- */
 
 .benefits {
   background-color: var(--violet);
@@ -445,7 +444,7 @@ img {
 }
 
 /* ------------------------------------------- */
-/* --------------------TASTE------------------ */
+/* -------------------- TASTE ------------------ */
 
 .taste {
   padding-top: 80px;
@@ -487,10 +486,6 @@ img {
 .taste-item:nth-child(4n + 3) {
   background-color: var(--violet);
 }
-
-/* .taste-item:nth-child(2n + 2):hover {
-  border: none;
-} */
 
 .taste-img-wrapper {
   background-color: inherit;
@@ -596,7 +591,6 @@ img {
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: var(--black);
-
   max-height: 146px;
   overflow-y: auto;
   white-space: normal;
@@ -604,7 +598,7 @@ img {
 }
 
 /* -------------------------------------- */
-/* --------------------MADE-------------- */
+/* -------------------- MADE -------------- */
 .made {
   padding-bottom: 80px;
 }
@@ -617,9 +611,6 @@ img {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-}
-
-.made-image {
 }
 
 .made-content {
@@ -666,7 +657,7 @@ img {
 }
 
 /* -------------------------------------- */
-/* ------------------PRODUCTS-------------- */
+/* ------------------ PRODUCTS -------------- */
 
 .products {
   padding-bottom: 80px;
@@ -722,7 +713,7 @@ img {
 }
 
 /* -------------------------------------- */
-/* --------------SELLERS------------------- */
+/* -------------- SELLERS ------------------- */
 
 .sellers {
   padding-bottom: 80px;
@@ -816,7 +807,7 @@ img {
 }
 
 /* -------------------------------------- */
-/* -------------REVIEWS-------------------- */
+/* ------------- REVIEWS -------------------- */
 
 .reviews {
   padding-bottom: 80px;
@@ -881,7 +872,7 @@ img {
 }
 
 /* -------------------------------------- */
-/* -------------------FOOTER---------------- */
+/* ------------------- FOOTER ---------------- */
 
 .footer {
   background-color: var(--violet);
@@ -988,10 +979,7 @@ img {
   font-size: 14px;
   color: var(--white-2);
   border-radius: 100px;
-  /* padding: 17px 40px; */
   padding: 14px 24px;
-  /* width: 137px; */
-  /* height: 52px; */
   width: 120px;
   height: 45px;
   background-color: var(--orange);
@@ -999,7 +987,7 @@ img {
   margin-left: 8px;
 }
 
-/* ------------------MODAL-------------------- */
+/* ------------------ MODAL -------------------- */
 
 .backdrop {
   width: 100%;
@@ -1009,6 +997,12 @@ img {
   top: 0;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
   pointer-events: none;
 }
 
@@ -1028,6 +1022,10 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .modal-close {
@@ -1147,9 +1145,6 @@ img {
 
 .modal-check:checked + .modal-check-text::after {
   transform: translate(18px);
-}
-
-.check-icon {
 }
 
 /* ------------------</MODAL>-------------------- */

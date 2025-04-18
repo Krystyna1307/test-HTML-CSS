@@ -21,6 +21,7 @@
   </head>
 
   <body>
+    <!------------ HEADER ------------->
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
@@ -79,25 +80,23 @@
           </li>
         </ul>
 
-        <!-- <button type="button" class="menu-open-btn">O</button> -->
-
-        <div class="mob-menu-open">
-          <a href="" class="menu-open-btn">
-            <svg class="menu-open-icon" width="24" height="16">
-              <use href="./images/symbol-defs.svg#icon-mob-open"></use>
-            </svg>
-          </a>
-        </div>
+        <button type="button" class="mob-menu-open js-open-menu">
+          <svg class="menu-open-icon" width="24" height="16">
+            <use href="./images/symbol-defs.svg#icon-mob-open"></use>
+          </svg>
+        </button>
       </div>
 
-      <div class="mob-menu">
+      <!------------ MOBILE-MENU ------------->
+
+      <div class="mob-menu js-menu-container">
         <div сlass="mob-menu-wrap-btn">
-          <!-- <button type="button" class="menu-close-btn">X</button> -->
-          <a href="" class="menu-close-btn">
+          <button href="" class="menu-close-btn js-close-menu">
             <svg class="menu-close-icon" width="14" height="14">
               <use href="./images/symbol-defs.svg#icon-mob-close"></use>
             </svg>
-          </a>
+          </button>
+
           <nav class="mob-nav">
             <ul class="mob-menu-list">
               <li class="mob-menu-item">
@@ -153,6 +152,7 @@
     </header>
 
     <main>
+      <!------------ HERO ------------->
       <section class="hero">
         <div class="container">
           <div class="hero-container">
@@ -162,7 +162,10 @@
             </h1>
             <div class="hero-buttons">
               <div class="wrap-btn">
-                <button type="button" class="hero-btn">Buy now</button>
+                <button type="button" class="hero-btn" data-modal-open>
+                  Buy now
+                </button>
+
                 <a href="" class="hero-made-link">How it’s made</a>
               </div>
               <div class="scroll-wrap">
@@ -178,6 +181,7 @@
         </div>
       </section>
 
+      <!------------ BENEFITS ------------->
       <section class="benefits">
         <div class="container">
           <h2 class="visually-hidden">Benefits</h2>
@@ -229,6 +233,7 @@
         </div>
       </section>
 
+      <!------------ TASTE ------------->
       <section class="taste">
         <div class="container">
           <h2 class="taste-title title">
@@ -472,6 +477,7 @@
         </div>
       </section>
 
+      <!------------ MADE ------------->
       <section id="made" class="made">
         <div class="container">
           <h2 class="made-title title">
@@ -555,6 +561,7 @@
         </div>
       </section>
 
+      <!------------ PRODUCTS ------------->
       <section class="products">
         <div class="container">
           <h2 class="products-title title">
@@ -691,6 +698,7 @@
         </div>
       </section>
 
+      <!------------ SELLERS ------------->
       <section class="sellers">
         <div class="container">
           <h2 class="sellers-title title">
@@ -762,6 +770,7 @@
         </div>
       </section>
 
+      <!------------ REVIEWS ------------->
       <section class="reviews">
         <div class="container">
           <h2 class="reviews-title title">
@@ -818,6 +827,7 @@
       </section>
     </main>
 
+    <!------------ FOOTER ------------->
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
@@ -924,13 +934,15 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <!------------ MODAL ------------->
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close">
+        <button type="button" class="modal-close" data-modal-close>
           <svg class="close-modal-svg" width="28" height="28">
             <use href="./images/symbol-defs.svg#icon-x-close"></use>
           </svg>
         </button>
+
         <p class="modal-title title">
           LEAVE A REVIEW ABOUT <span class="title-colored">OUR CHOCOLATE</span>
         </p>
@@ -993,8 +1005,9 @@
             <label for="policy" class="modal-check-text">
               <span>
                 <svg class="check-icon" width="10" height="10">
-                  <use href="./images/symbol-defs.svg#icon-icon"></use></svg
-              ></span>
+                  <use href="./images/symbol-defs.svg#icon-icon"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the Privacy Policy</label
             >
           </div>
@@ -1003,5 +1016,8 @@
         </form>
       </div>
     </div>
+
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
