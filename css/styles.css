@@ -590,6 +590,20 @@ img {
   background: var(--white);
 }
 
+.cover-btn-first,
+.cover-btn-second {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  display: inline-block;
+  width: auto;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 .taste-cover-text {
   font-weight: 400;
   font-size: 14px;
