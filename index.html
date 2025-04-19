@@ -403,16 +403,13 @@
                   class="taste-image"
                 />
               </div>
-
               <h3 class="taste-subtitle">CACAO</h3>
             </li>
-
             <li class="taste-item">
               <div class="taste-icon-btn-mob-cover">
                 <svg class="taste-icon-btn-mob" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-button-right"></use>
                 </svg>
-
                 <div class="taste-cover-wrap">
                   <h4 class="taste-cover-title">Raspberry</h4>
                   <div class="taste-cover-btn">
@@ -428,7 +425,6 @@
                   </p>
                 </div>
               </div>
-
               <div class="taste-img-wrapper">
                 <img
                   src="./images/taste-6-mob-min.png"
@@ -436,16 +432,13 @@
                   class="taste-image"
                 />
               </div>
-
               <h3 class="taste-subtitle">RASPBERRY</h3>
             </li>
-
             <li class="taste-item">
               <div class="taste-icon-btn-mob-cover">
                 <svg class="taste-icon-btn-mob" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-button-right"></use>
                 </svg>
-
                 <div class="taste-cover-wrap">
                   <h4 class="taste-cover-title">COCONUT OIL</h4>
                   <div class="taste-cover-btn">
@@ -462,7 +455,6 @@
                   </p>
                 </div>
               </div>
-
               <div class="taste-img-wrapper">
                 <img
                   src="./images/taste-7-mob-min.png"
@@ -470,7 +462,6 @@
                   class="taste-image"
                 />
               </div>
-
               <h3 class="taste-subtitle">COCONUT OIL</h3>
             </li>
           </ul>
@@ -943,12 +934,10 @@
             <use href="./images/symbol-defs.svg#icon-x-close"></use>
           </svg>
         </button>
-
         <p class="modal-title title">
           LEAVE A REVIEW<span class="mobile-br"><br /></span> ABOUT
           <span class="title-colored">OUR CHOCOLATE</span>
         </p>
-
         <form class="modal-form">
           <div class="modal-field">
             <label for="user-name" class="modal-label">Name</label>
@@ -957,11 +946,15 @@
                 type="text"
                 name="user-name"
                 class="modal-input"
-                required
                 id="user-name"
+                pattern="^[\p{L}]+$"
               />
               <svg class="modal-icon">
                 <use href="./images/symbol-defs.svg#icon-user"></use>
+              </svg>
+
+              <svg class="modal-error">
+                <use href="./images/symbol-defs.svg#icon-error"></use>
               </svg>
             </div>
           </div>
@@ -977,6 +970,10 @@
               <svg class="modal-icon">
                 <use href="./images/symbol-defs.svg#icon-mail"></use>
               </svg>
+
+              <svg class="modal-error">
+                <use href="./images/symbol-defs.svg#icon-error"></use>
+              </svg>
             </div>
           </div>
           <div class="modal-field">
@@ -986,11 +983,15 @@
                 type="tel"
                 name="user-tel"
                 class="modal-input"
-                required
                 id="user-tel"
+                pattern="^\d{10}$"
               />
               <svg class="modal-icon">
                 <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+
+              <svg class="modal-error">
+                <use href="./images/symbol-defs.svg#icon-error"></use>
               </svg>
             </div>
           </div>

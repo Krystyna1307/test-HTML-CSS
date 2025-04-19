@@ -6,12 +6,14 @@
   --white: #fafafa;
   --gray: #4c4c4c;
   --white-2: #fff;
+  --error: #e74a3b;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--white);
 }
+
 ul,
 ol {
   list-style-type: none;
@@ -19,9 +21,11 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 p,
 h1,
 h2,
@@ -32,6 +36,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 button {
   cursor: pointer;
   background: transparent;
@@ -311,9 +316,6 @@ img {
   gap: 32px;
 }
 
-.wrap-btn {
-}
-
 .hero-btn {
   font-weight: 600;
   font-size: 14px;
@@ -433,12 +435,14 @@ img {
   color: var(--white-2);
   margin-bottom: 18px;
 }
+
 .benefits-item-text {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
+
 .title-colored {
   color: var(--orange);
 }
@@ -466,6 +470,7 @@ img {
   flex-wrap: wrap;
   gap: 32px 24px;
 }
+
 .taste-item {
   border-radius: 15px;
   width: 335px;
@@ -602,6 +607,7 @@ img {
 .made {
   padding-bottom: 80px;
 }
+
 .made-title {
   margin-bottom: 32px;
 }
@@ -685,10 +691,12 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .products-image {
   margin: 0 auto;
   margin-bottom: 8px;
 }
+
 .products-subtitle {
   font-weight: 600;
   font-size: 18px;
@@ -697,6 +705,7 @@ img {
   text-transform: uppercase;
   margin-bottom: 2px;
 }
+
 .products-item-description {
   font-size: 12px;
   line-height: 1.17;
@@ -704,6 +713,7 @@ img {
   color: rgba(17, 17, 17, 0.7);
   margin-bottom: 18px;
 }
+
 .products-btn {
   font-weight: 600;
   font-size: 14px;
@@ -844,6 +854,7 @@ img {
   min-width: 80px;
   border-radius: 50%;
 }
+
 .reviews-subtitle {
   font-weight: 600;
   font-size: 18px;
@@ -852,6 +863,7 @@ img {
   margin-bottom: 24px;
   background-color: var(--white-2);
 }
+
 .reviews-item-text {
   font-size: 14px;
   line-height: 1.29;
@@ -859,6 +871,7 @@ img {
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
 }
+
 .reviews-btn {
   font-weight: 600;
   font-size: 18px;
@@ -1077,6 +1090,14 @@ img {
   stroke: var(--orange);
 }
 
+.modal-input:invalid {
+  border-color: var(--error);
+}
+
+.modal-input:invalid + .modal-icon {
+  stroke: var(--error);
+}
+
 .modal-label {
   display: block;
   margin-bottom: 4px;
@@ -1093,12 +1114,27 @@ img {
   width: 18px;
   height: 18px;
   fill: transparent;
-  stroke: #404040;
+  stroke: var(--gray);
   position: absolute;
   left: 24px;
   left: 18px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.modal-error {
+  width: 18px;
+  height: 18px;
+  stroke: var(--error);
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.modal-input:invalid ~ .modal-error {
+  display: block;
 }
 
 .modal-text {
@@ -1109,12 +1145,15 @@ img {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
   background-color: transparent;
   outline: transparent;
-  /* padding-left: 62px; */
   padding: 14px 18px;
   resize: none;
   font-size: 13px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
+}
+
+.modal-text:focus {
+  border-color: var(--orange);
 }
 
 .modal-check-text {
@@ -1154,7 +1193,6 @@ img {
 
 .modal-btn {
   display: block;
-  margin: 0 auto;
   border-radius: 100px;
   padding: 12px 28px;
   width: 93px;
@@ -1292,7 +1330,6 @@ img {
 
   .taste-list {
     margin-top: 50px;
-    /* gap: 32px 0; */
     justify-content: flex-start;
   }
 
@@ -1363,10 +1400,6 @@ img {
     width: 344px;
     margin-bottom: 50px;
   }
-
-  /* .reviews-item:last-child {
-    margin-bottom: 50px;
-  } */
 
   .footer-contacts {
     order: 2;
@@ -1440,6 +1473,11 @@ img {
   .modal-check-text {
     font-size: 14px;
   }
+
+  .modal-error {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 /* -----------------1200px---------------- */
@@ -1486,6 +1524,7 @@ img {
     padding: 0 18px;
     gap: 88px;
   }
+
   .benefits-item {
     flex-basis: calc((100% - 2 * 88px) / 3);
   }
