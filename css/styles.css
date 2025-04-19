@@ -747,6 +747,15 @@ img {
   margin-bottom: 32px;
 }
 
+.sellers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .sellers-item {
   position: relative;
   margin-bottom: 16px;
@@ -773,7 +782,6 @@ img {
 
   .sellers-item {
     width: 320px;
-    margin: 0 auto 16px;
   }
 }
 
@@ -784,10 +792,9 @@ img {
     height: 464px;
   }
 
-  .sellers-item {
+  /* .sellers-item {
     width: 335px;
-    margin: 0 0 16px;
-  }
+  } */
 }
 
 .sellers-subtitle {
@@ -848,8 +855,12 @@ img {
   border-radius: 15px;
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
   position: relative;
-  width: 335px;
   height: 200px;
+
+  width: 100%; /* 👈 замість 335px */
+  max-width: 335px; /* 👈 щоб не перевищував */
+  margin-left: auto; /* 👈 центрування */
+  margin-right: auto;
 }
 
 .reviews-item:not(:last-child) {
