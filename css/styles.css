@@ -307,7 +307,7 @@ img {
 .wrap-btn {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 14px;
   width: 100%;
 }
@@ -1353,6 +1353,9 @@ img {
   .scroll-wrap {
     width: 130px;
     margin-left: auto;
+  }
+
+  .wrap-btn {
   }
 
   .benefits {
