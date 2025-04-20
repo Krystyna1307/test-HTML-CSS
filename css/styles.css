@@ -304,6 +304,14 @@ img {
   gap: 32px;
 }
 
+.wrap-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+}
+
 .hero-btn {
   font-weight: 600;
   font-size: 14px;
@@ -312,8 +320,7 @@ img {
   border-radius: 100px;
   border: none;
   padding: 12px 16px;
-  margin-right: 14px;
-  /* max-width: 100px; */
+  /* margin-right: 14px; */
 }
 
 .hero-btn:hover {
