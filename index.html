@@ -25,7 +25,7 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
-          <a href="" class="header-logo"
+          <a href="#top" class="header-logo"
             ><span class="header-logo-italic">SIMPLY</span> CHOCOLATE
             <svg class="header-icon" width="21" height="21">
               <use href="./images/symbol-defs.svg#icon-chocolate"></use>
@@ -33,7 +33,7 @@
           </a>
           <ul class="header-menu-list">
             <li class="header-menu-item">
-              <a class="header-menu-link" href="">Home</a>
+              <a class="header-menu-link" href="#top">Home</a>
             </li>
             <li class="header-menu-item">
               <a class="header-menu-link" href="#made">How it’s made?</a>
@@ -91,7 +91,7 @@
 
       <div class="mob-menu js-menu-container">
         <div class="mob-menu-wrap-btn">
-          <button href="" class="menu-close-btn js-close-menu">
+          <button type="button" href="" class="menu-close-btn js-close-menu">
             <svg class="menu-close-icon" width="14" height="14">
               <use href="./images/symbol-defs.svg#icon-mob-close"></use>
             </svg>
@@ -169,8 +169,8 @@
                 <a href="#made" class="hero-made-link">How it’s made</a>
               </div>
               <div class="scroll-wrap">
-                <a href="" class="hero-scroll-link">scroll down</a>
-                <a href="" class="scroll-down-btn">
+                <a href="#footer" class="hero-scroll-link">scroll down</a>
+                <a href="#footer" class="scroll-down-btn">
                   <svg class="icon-scroll" width="16" height="16">
                     <use href="./images/symbol-defs.svg#icon-scroll"></use>
                   </svg>
@@ -787,7 +787,7 @@
     </main>
 
     <!------------ FOOTER ------------->
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
         <div class="footer-top">
           <p class="footer-title">
@@ -904,102 +904,110 @@
             <use href="./images/symbol-defs.svg#icon-x-close"></use>
           </svg>
         </button>
-        <p class="modal-title title">
-          LEAVE A REVIEW<span class="mobile-br"><br /></span> ABOUT
-          <span class="title-colored">OUR CHOCOLATE</span>
-        </p>
-        <form class="modal-form">
-          <div class="modal-field">
-            <label for="user-name" class="modal-label">Name</label>
-            <div class="modal-field-wrap">
-              <input
-                type="text"
-                name="user-name"
-                class="modal-input"
-                id="user-name"
-                pattern="^[\p{L}]+$"
-              />
-              <svg class="modal-icon">
-                <use href="./images/symbol-defs.svg#icon-user"></use>
-              </svg>
 
-              <svg class="modal-error">
-                <use href="./images/symbol-defs.svg#icon-error"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="modal-field">
-            <label for="user-email" class="modal-label">Email</label>
-            <div class="modal-field-wrap">
-              <input
-                type="email"
-                name="user-email"
-                class="modal-input"
-                id="user-email"
-              />
-              <svg class="modal-icon">
-                <use href="./images/symbol-defs.svg#icon-mail"></use>
-              </svg>
-
-              <svg class="modal-error">
-                <use href="./images/symbol-defs.svg#icon-error"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="modal-field">
-            <label for="user-tel" class="modal-label">Phone number</label>
-            <div class="modal-field-wrap">
-              <input
-                type="tel"
-                name="user-tel"
-                class="modal-input"
-                id="user-tel"
-                pattern="^\d{10}$"
-              />
-              <svg class="modal-icon">
-                <use href="./images/symbol-defs.svg#icon-phone"></use>
-              </svg>
-
-              <svg class="modal-error">
-                <use href="./images/symbol-defs.svg#icon-error"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="modal-field">
-            <label for="user-comment" class="modal-label">Comment</label>
-            <div class="modal-field-wrap">
-              <textarea
-                name="user-comment"
-                id="user-comment"
-                class="modal-text"
-                placeholder="Enter text"
-              ></textarea>
-            </div>
-          </div>
-
-          <div class="modal-field">
-            <input
-              type="checkbox"
-              name="policy"
-              id="policy"
-              value="true"
-              class="modal-check visually-hidden"
-            />
-            <label for="policy" class="modal-check-text">
-              <span class="check-text">
-                <svg class="check-icon" width="10" height="10">
-                  <use href="./images/symbol-defs.svg#icon-check"></use>
+        <div class="modal-scroll">
+          <!-- <button type="button" class="modal-close" data-modal-close>
+            <svg class="close-modal-svg">
+              <use href="./images/symbol-defs.svg#icon-x-close"></use>
+            </svg>
+          </button> -->
+          <p class="modal-title title">
+            LEAVE A REVIEW<span class="mobile-br"><br /></span> ABOUT
+            <span class="title-colored">OUR CHOCOLATE</span>
+          </p>
+          <form class="modal-form">
+            <div class="modal-field">
+              <label for="user-name" class="modal-label">Name</label>
+              <div class="modal-field-wrap">
+                <input
+                  type="text"
+                  name="user-name"
+                  class="modal-input"
+                  id="user-name"
+                  pattern="^[\p{L}]+$"
+                />
+                <svg class="modal-icon">
+                  <use href="./images/symbol-defs.svg#icon-user"></use>
                 </svg>
-              </span>
-              <span class="check-label">
-                I accept the terms and conditions of the&nbsp;
-                <a href="" class="href">Privacy Policy</a>
-              </span>
-            </label>
-          </div>
 
-          <button type="submit" class="modal-btn">Send</button>
-        </form>
+                <svg class="modal-error">
+                  <use href="./images/symbol-defs.svg#icon-error"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-field">
+              <label for="user-email" class="modal-label">Email</label>
+              <div class="modal-field-wrap">
+                <input
+                  type="email"
+                  name="user-email"
+                  class="modal-input"
+                  id="user-email"
+                />
+                <svg class="modal-icon">
+                  <use href="./images/symbol-defs.svg#icon-mail"></use>
+                </svg>
+
+                <svg class="modal-error">
+                  <use href="./images/symbol-defs.svg#icon-error"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-field">
+              <label for="user-tel" class="modal-label">Phone number</label>
+              <div class="modal-field-wrap">
+                <input
+                  type="tel"
+                  name="user-tel"
+                  class="modal-input"
+                  id="user-tel"
+                  pattern="^\d{10}$"
+                />
+                <svg class="modal-icon">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+
+                <svg class="modal-error">
+                  <use href="./images/symbol-defs.svg#icon-error"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-field">
+              <label for="user-comment" class="modal-label">Comment</label>
+              <div class="modal-field-wrap">
+                <textarea
+                  name="user-comment"
+                  id="user-comment"
+                  class="modal-text"
+                  placeholder="Enter text"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="modal-field">
+              <input
+                type="checkbox"
+                name="policy"
+                id="policy"
+                value="true"
+                class="modal-check visually-hidden"
+              />
+              <label for="policy" class="modal-check-text">
+                <span class="check-text">
+                  <svg class="check-icon" width="10" height="10">
+                    <use href="./images/symbol-defs.svg#icon-check"></use>
+                  </svg>
+                </span>
+                <span class="check-label">
+                  I accept the terms and conditions of the&nbsp;
+                  <a href="" class="href">Privacy Policy</a>
+                </span>
+              </label>
+            </div>
+
+            <button type="submit" class="modal-btn">Send</button>
+          </form>
+        </div>
       </div>
     </div>
 
